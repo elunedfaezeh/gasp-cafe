@@ -77,6 +77,17 @@ const Hero = () => {
 
     })
 
+    gsap.from('.arrow', {
+      opacity:0,
+      y:-60,
+      delay: 4,
+      yoyo:true,
+      repeat:-1,
+
+
+    })
+
+
     gsap.from('.left-leaf', {
       x: -100,
       opacity: 0,
