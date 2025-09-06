@@ -28,8 +28,8 @@ const Navbar = () => {
         <nav>
             <div>
                 <a href="#Home" className="flex items-center gap-2">
-                    <img src="/images/logo.png" alt="logo" />
-                    <p>MINTED</p>
+                    <img src="/images/Logo.png" alt="logo" />
+                    <p>Freshmint</p>
                 </a>
                 <ul>
                     {navLinks.map((link) => (

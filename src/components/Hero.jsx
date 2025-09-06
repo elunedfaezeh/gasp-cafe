@@ -16,10 +16,12 @@ const Hero = () => {
     heroSplit.chars.forEach((char) => char.classList.add('text-gradient'));
 
     gsap.from(heroSplit.chars, {
+      opacity:0,
       yPercent: 100,
       duration: 1.8,
       ease: 'expo.out',
-      stagger: 0.08
+      stagger: 0.3,
+
 
     });
     gsap.from(paragraphSplit.lines, {
@@ -28,7 +30,7 @@ const Hero = () => {
       duration: 1.8,
       ease: 'expo.out',
       stagger: 0.08,
-      delay: 1,
+      delay: 2,
 
     });
 
@@ -70,7 +72,7 @@ const Hero = () => {
     gsap.from('.right-leaf', {
       x: 100,
       opacity: 0,
-      delay: 1.5
+      delay: 2.5
 
 
     })
@@ -78,7 +80,7 @@ const Hero = () => {
     gsap.from('.left-leaf', {
       x: -100,
       opacity: 0,
-      delay: 2
+      delay: 3
 
 
     })
@@ -99,6 +101,8 @@ const Hero = () => {
           className="right-leaf"
         />
         <div className="body">
+        <img src="/images/arrow.png" alt="arrow" className="arrow" />
+
           <div className="content">
             <div className="space-y-5 hidden md:block">
               <p>Refreshing. Natural. Unique.</p>
@@ -119,7 +123,7 @@ const Hero = () => {
         </div>
       </section>
       <div className="video absolute inset-0">
-        <video src="/videos/input7.mp4"
+        <video src="/videos/output.mp4"
           ref={videoRef}
           muted
           playsInline
