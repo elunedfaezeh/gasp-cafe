@@ -36,14 +36,14 @@ const Navbar = () => {
   })
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0 rounded-b-2xl shadow-lg border-b border-white/10">
+    <nav className="fixed top-0 left-0 w-full z-50 px-6 py-3 flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0 rounded-b-1xl shadow-lg border-b border-white/10">
       {/* لوگو */}
       <a
         href="#Home"
-        className="flex items-center gap-3 font-extrabold text-2xl text-white tracking-wide hover:text-green-300 transition-colors self-center md:self-auto"
+        className="flex items-center gap-3 font-extrabold text-2xl text-white tracking-wide hover:text-amber-50 transition-colors self-center md:self-auto"
       >
-        <img src="/images/Logo.png" alt="logo" className="w-10 h-10 drop-shadow-lg" />
-        <span className="drop-shadow-[0_0_8px_rgba(0,255,150,0.8)]">Freshmint</span>
+        <img src="/images/Logo.png" alt="logo" className="w-10 h-10" />
+        <span >Freshmint</span>
       </a>
 
       {/* لینک‌ها */}
@@ -52,7 +52,7 @@ const Navbar = () => {
           <li key={link.id}>
             <a
               href={`#${link.id}`}
-              className="relative text-white transition-all duration-300 hover:text-green-800
+              className="relative text-white transition-all duration-300 hover:text-amber-50
                 after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:-bottom-1
                 after:bg-gradient-to-r after:from-green-800 after:to-emerald-500 after:rounded-full
                 after:transition-all after:duration-500 hover:after:w-full"
