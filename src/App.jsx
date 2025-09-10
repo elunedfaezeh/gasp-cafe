@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import Cocktails from './components/Cocktails'
 import ScrollH from './components/ScrollH'
 import { Helmet } from 'react-helmet';
-
+import About from './components/About'
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
     <Hero/>
     <Cocktails/>
     <ScrollH/>
-    <div className='h-dvh bg-black '></div>
+    <About/>
  </main>
   )
 }

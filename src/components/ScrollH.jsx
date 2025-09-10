@@ -13,9 +13,9 @@ const ScrollH = () => {
     circles.forEach((circle, i) => {
       gsap.fromTo(
         circle,
-        { x: -300, opacity: 0 },
+        { x: -400, opacity: 0 },
         {
-          x: 150 * (i + 1),
+          x: 250 * (i + 1),
           opacity: 1,
           rotation: 360,
           scale: 2,
@@ -39,7 +39,7 @@ const ScrollH = () => {
         x: 0,
         opacity: 1,
         duration: 2,
-        border:1,
+        border: 1,
         scrollTrigger: {
           trigger: scrollRef.current,
           start: "top 30%",
@@ -52,22 +52,20 @@ const ScrollH = () => {
   }, { scope: scrollRef });
 
   return (
-<main className="h-[80vh] flex flex-col items-center relative bg-black noisy">
-  <div className="mt-20 space-y-0 h-[300vh] relative" ref={scrollRef}> 
-    <div className="circle w-24 h-24 rounded-lg bg-[#A8D5BA]" />
-    <div className="circle w-24 h-24 rounded-lg bg-[#394c1a]" />
-    <div className="circle w-24 h-24 rounded-lg bg-[#e1c360]" />
-    <div className="circle w-24 h-24 rounded-lg bg-[#e1b460]" />
-
-
-    <h2
-      ref={textRef}
-      className="absolute top-[100px] left-1/2 -translate-x-1/2 md:text-6xl text-2xl font-bold p-2"
-    >
-      CHEERS!
-    </h2>
-  </div>
-</main>
+    <main className="h-[60vh] flex flex-col items-center relative bg-black noisy">
+      <div className="mt-20 space-y-0 h-[300vh] relative" ref={scrollRef}>
+        <div className="circle w-24 h-24 rounded-lg bg-[#A8D5BA]" />
+        <div className="circle w-24 h-24 rounded-lg bg-[#e1c360]" />
+        <div className="circle w-24 h-24 rounded-lg bg-[#b1d27b]" />
+        <div className="circle w-24 h-24 rounded-lg bg-[#ff7f29]" />
+        <h2
+          ref={textRef}
+          className="absolute top-[100px] left-1/2 -translate-x-1/2 md:text-6xl text-2xl font-bold p-2"
+        >
+          CHEERS!
+        </h2>
+      </div>
+    </main>
 
   );
 };
