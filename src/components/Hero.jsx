@@ -76,6 +76,19 @@ const Hero = () => {
 
 
     })
+    gsap.from('.explore', {
+      opacity: 0,
+      delay: 2.5
+
+
+    })
+    // gsap.from('.right-leaf', {
+    //   x: 100,
+    //   opacity: 0,
+    //   delay: 2.5
+
+
+    // })
 
     gsap.from('.arrow', {
       opacity:0,
@@ -116,7 +129,7 @@ const Hero = () => {
 
           <div className="content">
             <div className="space-y-5 hidden md:block">
-              <p>Refreshing. Natural. Unique.</p>
+              <p className="explore">Refreshing. Natural. Unique.</p>
               <p className="subtitle">
                 Taste the <br /> Essence of Nature
               </p>
@@ -128,7 +141,7 @@ const Hero = () => {
                 vibrant flavors, and a touch of creativity — made to refresh
                 your soul.
               </p>
-              <a href="#cocktails">Explore drinks</a>
+              <a href="#cocktails" className="explore">Explore drinks</a>
             </div>
           </div>
         </div>
