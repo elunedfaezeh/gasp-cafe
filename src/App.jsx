@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText)
 const App = () => {
   return (
  <main>
-    {/* <Navbar/> */}
+    <Navbar/>
     <Helmet>
         {/* اندروید */}
         <meta name="theme-color" content="#000000" />
