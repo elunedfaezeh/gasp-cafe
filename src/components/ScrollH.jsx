@@ -60,7 +60,7 @@ const ScrollH = () => {
   }, { scope: scrollRef });
 
   return (
-    <main className="h-[95vh] flex flex-col items-center relative bg-black pt-20">
+    <main className="h-[100vh] flex flex-col items-center relative bg-black pt-30">
       <div className="mt-20 space-y-0 h-[150vh] relative" ref={scrollRef}>
         {/* دایره‌ها */}
         <div className="circle w-24 h-24 rounded-lg bg-[#B45253]" />
@@ -71,25 +71,25 @@ const ScrollH = () => {
         {/* متن‌ها (پراکنده) */}
         <h2
           ref={(el) => (textRefs.current[0] = el)}
-          className="absolute top-[50px] left-1/2 -translate-x-1/2 md:text-8xl text-3xl font-bold p-2 text-white"
+          className="absolute top-[50px] left-1/2 -translate-x-1/2 md:text-8xl text-4xl font-bold p-2 text-white"
         >
           CHEERS!
         </h2>
         <h2
           ref={(el) => (textRefs.current[1] = el)}
-          className="absolute top-[150px] left-[20%] md:text-7xl text-2xl font-bold text-[#FFE797]"
+          className="absolute top-[150px] left-[20%] md:text-7xl text-3xl font-bold text-[#FFE797]"
         >
           PARTY
         </h2>
         <h2
           ref={(el) => (textRefs.current[2] = el)}
-          className="absolute top-[250px] right-[15%] md:text-6xl text-xl font-bold text-[#B45253]"
+          className="absolute top-[250px] right-[15%] md:text-6xl text-2xl font-bold text-[#B45253]"
         >
           FUN
         </h2>
         <h2
           ref={(el) => (textRefs.current[3] = el)}
-          className="absolute top-[350px] left-[30%] md:text-5xl text-lg font-bold text-[#84994F]"
+          className="absolute top-[350px] left-[30%] md:text-5xl text-3xl font-bold text-[#84994F]"
         >
           VIBES
         </h2>
