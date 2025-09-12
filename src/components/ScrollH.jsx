@@ -1,21 +1,26 @@
 import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ScrollH = () => {
   const scrollRef = useRef();
-  const textRef = useRef();
+  const textRefs = useRef([]);
 
   useGSAP(() => {
-    const circles = gsap.utils.toArray(scrollRef.current.children);
+    const circles = gsap.utils.toArray(scrollRef.current.children).filter(
+      (el) => el.classList.contains("circle")
+    );
 
-    // حرکت دایره‌ها به صورت آرام و دائمی
+    // انیمیشن دایره‌ها
     circles.forEach((circle, i) => {
       gsap.fromTo(
         circle,
-        { x: -400, opacity: 0 },
+        { x: -900, opacity: 0 },
         {
-          x: 250 * (i + 1),
+          x: 150 * (i + 1),
           opacity: 1,
           rotation: 360,
           scale: 2,
@@ -31,42 +36,65 @@ const ScrollH = () => {
       );
     });
 
-    // متن CHEERS فقط یکبار نمایش داده شود و بمونه
-    gsap.fromTo(
-      textRef.current,
-      { x: -50, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 2,
-        border: 1,
-        scrollTrigger: {
-          trigger: scrollRef.current,
-          start: "top 30%",
-          end: "top 25%",
-          toggleActions: "play none none none",
-          once: true, // فقط یکبار و بعد بمونه
-        },
-      }
-    );
+    // انیمیشن متن‌ها (پراکنده)
+    textRefs.current.forEach((txt, i) => {
+      gsap.fromTo(
+        txt,
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          border:1,
+          opacity: 1,
+          borderRadius: "40% 60% 70% 30% / 40% 30% 70% 60%",
+
+          duration: 1.5,
+          delay: i * 0.3, // یکی یکی بیان
+          scrollTrigger: {
+            trigger: scrollRef.current,
+            start: "top 40%",
+            end: "top 20%",
+          },
+        }
+      );
+    });
   }, { scope: scrollRef });
 
   return (
-    <main className="h-[100vh] flex flex-col items-center relative bg-black  ">
+    <main className="h-[95vh] flex flex-col items-center relative bg-black pt-20">
       <div className="mt-20 space-y-0 h-[150vh] relative" ref={scrollRef}>
-        <div className="circle w-24 h-24 rounded-lg bg-[#A8D5BA]" />
-        <div className="circle w-24 h-24 rounded-lg bg-[#e1c360]" />
-        <div className="circle w-24 h-24 rounded-lg bg-[#b1d27b]" />
-        <div className="circle w-24 h-24 rounded-lg bg-[#ff7f29]" />
+        {/* دایره‌ها */}
+        <div className="circle w-24 h-24 rounded-lg bg-[#B45253]" />
+        <div className="circle w-24 h-24 rounded-lg bg-[#FFE797]" />
+        <div className="circle w-24 h-24 rounded-lg bg-[#84994F]" />
+        <div className="circle w-27 h-27 rounded-lg bg-[#541212]" />
+
+        {/* متن‌ها (پراکنده) */}
         <h2
-          ref={textRef}
-          className="absolute top-[100px] left-1/2 -translate-x-1/2 md:text-6xl text-2xl font-bold p-2"
+          ref={(el) => (textRefs.current[0] = el)}
+          className="absolute top-[50px] left-1/2 -translate-x-1/2 md:text-8xl text-3xl font-bold p-2 text-white"
         >
           CHEERS!
         </h2>
+        <h2
+          ref={(el) => (textRefs.current[1] = el)}
+          className="absolute top-[150px] left-[20%] md:text-7xl text-2xl font-bold text-[#FFE797]"
+        >
+          PARTY
+        </h2>
+        <h2
+          ref={(el) => (textRefs.current[2] = el)}
+          className="absolute top-[250px] right-[15%] md:text-6xl text-xl font-bold text-[#B45253]"
+        >
+          FUN
+        </h2>
+        <h2
+          ref={(el) => (textRefs.current[3] = el)}
+          className="absolute top-[350px] left-[30%] md:text-5xl text-lg font-bold text-[#84994F]"
+        >
+          VIBES
+        </h2>
       </div>
     </main>
-
   );
 };
 
