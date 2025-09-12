@@ -52,8 +52,8 @@ const ScrollH = () => {
   }, { scope: scrollRef });
 
   return (
-    <main className="h-[60vh] flex flex-col items-center relative bg-black noisy">
-      <div className="mt-20 space-y-0 h-[300vh] relative" ref={scrollRef}>
+    <main className="h-[100vh] flex flex-col items-center relative bg-black  ">
+      <div className="mt-20 space-y-0 h-[150vh] relative" ref={scrollRef}>
         <div className="circle w-24 h-24 rounded-lg bg-[#A8D5BA]" />
         <div className="circle w-24 h-24 rounded-lg bg-[#e1c360]" />
         <div className="circle w-24 h-24 rounded-lg bg-[#b1d27b]" />
