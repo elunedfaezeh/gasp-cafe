@@ -20,7 +20,7 @@ const ScrollH = () => {
         circle,
         { x: -900, opacity: 0 },
         {
-          x: 150 * (i + 1),
+          x: 130 * (i + 1),
           opacity: 1,
           rotation: 360,
           scale: 2.3,
@@ -42,7 +42,11 @@ const ScrollH = () => {
         txt,
         { y: 50, opacity: 0 },
         {
-          y: 0,
+          opacity: 1,
+          x:-2,
+          repeat:-1,
+          yoyo:true,
+          y:2,
           border:1,
           opacity: 1,
           borderRadius: "40% 60% 70% 30% / 40% 30% 70% 60%",
@@ -60,7 +64,7 @@ const ScrollH = () => {
   }, { scope: scrollRef });
 
   return (
-    <main className="h-[90vh] flex flex-col items-center relative bg-black pt-25">
+    <main className="h-[100vh] flex flex-col items-center relative bg-black pt-25">
       <div className="mt-20 space-y-0 h-[150vh] relative" ref={scrollRef}>
         {/* دایره‌ها */}
         <div className="circle w-24 h-24 rounded-lg bg-[#F08B51]" />
