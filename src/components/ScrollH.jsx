@@ -23,7 +23,7 @@ const ScrollH = () => {
           x: 150 * (i + 1),
           opacity: 1,
           rotation: 360,
-          scale: 2,
+          scale: 2.3,
           borderRadius: "40% 60% 70% 30% / 40% 30% 70% 60%",
           ease: "power1.inOut",
           scrollTrigger: {
@@ -60,12 +60,12 @@ const ScrollH = () => {
   }, { scope: scrollRef });
 
   return (
-    <main className="h-[100vh] flex flex-col items-center relative bg-black pt-30">
+    <main className="h-[90vh] flex flex-col items-center relative bg-black pt-25">
       <div className="mt-20 space-y-0 h-[150vh] relative" ref={scrollRef}>
         {/* دایره‌ها */}
         <div className="circle w-24 h-24 rounded-lg bg-[#F08B51]" />
         <div className="circle w-24 h-24 rounded-lg bg-[#541212]" />
-        <div className="circle w-24 h-24 rounded-lg bg-[#84994F]" />
+        <div className="circle w-24 h-24 rounded-lg bg-[#C6D870]" />
         <div className="circle w-29 h-29 rounded-lg bg-[#FFE797]" />
 
         {/* متن‌ها (پراکنده) */}
@@ -83,13 +83,13 @@ const ScrollH = () => {
         </h2>
         <h2
           ref={(el) => (textRefs.current[2] = el)}
-          className="absolute top-[250px] right-[15%] md:text-6xl text-2xl font-bold text-[#541212]"
+          className="absolute top-[250px] right-[15%] md:text-7xl text-5xl font-bold text-[#541212]"
         >
           FUN
         </h2>
         <h2
           ref={(el) => (textRefs.current[3] = el)}
-          className="absolute top-[350px] left-[30%] md:text-5xl text-3xl font-bold text-[#84994F]"
+          className="absolute top-[350px] left-[30%] md:text-6xl text-3xl font-bold text-[#84994F]"
         >
           VIBES
         </h2>
