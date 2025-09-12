@@ -63,10 +63,10 @@ const ScrollH = () => {
     <main className="h-[100vh] flex flex-col items-center relative bg-black pt-30">
       <div className="mt-20 space-y-0 h-[150vh] relative" ref={scrollRef}>
         {/* دایره‌ها */}
-        <div className="circle w-24 h-24 rounded-lg bg-[#B45253]" />
-        <div className="circle w-24 h-24 rounded-lg bg-[#FFE797]" />
+        <div className="circle w-24 h-24 rounded-lg bg-[#F08B51]" />
+        <div className="circle w-24 h-24 rounded-lg bg-[#541212]" />
         <div className="circle w-24 h-24 rounded-lg bg-[#84994F]" />
-        <div className="circle w-27 h-27 rounded-lg bg-[#541212]" />
+        <div className="circle w-29 h-29 rounded-lg bg-[#FFE797]" />
 
         {/* متن‌ها (پراکنده) */}
         <h2
@@ -83,7 +83,7 @@ const ScrollH = () => {
         </h2>
         <h2
           ref={(el) => (textRefs.current[2] = el)}
-          className="absolute top-[250px] right-[15%] md:text-6xl text-2xl font-bold text-[#B45253]"
+          className="absolute top-[250px] right-[15%] md:text-6xl text-2xl font-bold text-[#541212]"
         >
           FUN
         </h2>
