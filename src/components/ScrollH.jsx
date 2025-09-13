@@ -55,7 +55,7 @@ const ScrollH = () => {
           delay: i * 0.3, // یکی یکی بیان
           scrollTrigger: {
             trigger: scrollRef.current,
-            start: "top 40%",
+            start: "top 20%",
             end: "top 20%",
           },
         }
@@ -64,7 +64,7 @@ const ScrollH = () => {
   }, { scope: scrollRef });
 
   return (
-    <main className="h-[100vh] flex flex-col items-center relative bg-black pt-25">
+    <main className="h-[100vh] flex flex-col items-center relative bg-black pt-15">
       <div className="mt-20 space-y-0 h-[150vh] relative" ref={scrollRef}>
         {/* دایره‌ها */}
         <div className="circle w-24 h-24 rounded-lg bg-[#F08B51]" />

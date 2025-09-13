@@ -6,23 +6,23 @@ import Cocktails from './components/Cocktails'
 import ScrollH from './components/ScrollH'
 import { Helmet } from 'react-helmet';
 import About from './components/About'
+import Art from './components/Art'
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
 const App = () => {
   return (
- <main>
-    <Navbar/>
-    <Helmet>
-        {/* اندروید */}
+    <main>
+      <Navbar />
+      <Helmet>
         <meta name="theme-color" content="#000000" />
-        {/* آیفون */}
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       </Helmet>
-    <Hero/>
-    <Cocktails/>
-    <ScrollH/>
-    <About/>
- </main>
+      <Hero />
+      <Cocktails />
+      <About />
+      <ScrollH />
+      <Art />
+    </main>
   )
 }
 
