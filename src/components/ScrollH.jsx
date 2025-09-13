@@ -50,7 +50,6 @@ const ScrollH = () => {
           border:1,
           opacity: 1,
           borderRadius: "40% 60% 70% 30% / 40% 30% 70% 60%",
-
           duration: 1.5,
           delay: i * 0.3, // یکی یکی بیان
           scrollTrigger: {
