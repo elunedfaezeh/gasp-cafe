@@ -47,7 +47,7 @@ body {
 
 @utility radial-gradient {
   background: radial-gradient(circle at center,
-      #434343 0%,
+      #660B05 0%,
       #000 50%,
       transparent 100%);
 }
