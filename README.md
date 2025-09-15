@@ -38,21 +38,8 @@ And many more, including enhanced security and optimized video performance!
 
 Follow these steps to set up the project locally on your machine.
 
----
-
-### 📋 Prerequisites
-Make sure you have the following installed on your machine:
-- **Git**
-- **Node.js**
-- **npm** (Node Package Manager)
-
----
-
-### 📂 Cloning the Repository
-```bash
-git clone {remote URL}
-cd <project-folder>
-
- ##‌ Installation
+## Installation
+Install the project dependencies using npm: 
 ```bash
 npm install
+
