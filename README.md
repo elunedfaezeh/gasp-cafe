@@ -33,3 +33,26 @@ Vite is a lightning-fast build tool and development server that powers this proj
 👉 Responsive Design: Ensure fluid UI and adaptive GSAP animations across all screen sizes.
 
 And many more, including enhanced security and optimized video performance!
+
+## 🤸 Quick Start
+
+Follow these steps to set up the project locally on your machine.
+
+---
+
+### 📋 Prerequisites
+Make sure you have the following installed on your machine:
+- **Git**
+- **Node.js**
+- **npm** (Node Package Manager)
+
+---
+
+### 📂 Cloning the Repository
+```bash
+git clone {remote URL}
+cd <project-folder>
+
+ ##‌ Installation
+```bash
+npm install
