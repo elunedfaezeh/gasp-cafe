@@ -40,7 +40,7 @@ Follow these steps to set up the project locally on your machine.
 Install the project dependencies using npm: 
 ```bash
 npm install
-
+---
 ## Running the Project
 ```bash
 npm run dev
