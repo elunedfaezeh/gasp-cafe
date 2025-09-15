@@ -43,7 +43,7 @@ const Navbar = () => {
         className="flex items-center gap-3 font-extrabold text-2xl text-white tracking-wide hover:text-amber-50 transition-colors self-center md:self-auto"
       >
         <img src="/images/Logo.png" alt="logo" className="w-10 h-10" />
-        <span >Freshmint</span>
+        <span >Lemint</span>
       </a>
 
       {/* لینک‌ها */}

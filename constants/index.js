@@ -8,6 +8,10 @@ const navLinks = [
 	   title: "About Us",
 	},
 	{
+		id: "menu",
+		title: "Menu",
+	 },
+	{
 	   id: "art",
 	   title: "The Art",
 	},
@@ -15,6 +19,7 @@ const navLinks = [
 	   id: "contact",
 	   title: "Contact",
 	},
+	
    ];
    
    const cocktailLists = [

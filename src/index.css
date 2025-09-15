@@ -35,7 +35,7 @@ body {
 }
 
 @utility abs-center {
-  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ;
 }
 
 @utility text-gradient {
@@ -47,7 +47,7 @@ body {
 
 @utility radial-gradient {
   background: radial-gradient(circle at center,
-      #660B05 0%,
+      #CADCAE 0%,
       #000 50%,
       transparent 100%);
 }
@@ -279,7 +279,7 @@ body {
   }
 
   #menu {
-    @apply relative w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient;
+    @apply relative w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient ;
 
     #m-left-leaf {
       @apply object-contain absolute -bottom-20 left-0 md:w-fit w-1/3;
@@ -290,7 +290,7 @@ body {
     }
 
     .cocktail-tabs {
-      @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
+      @apply  grid md:grid-cols-4 grid-cols-2  md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto ;
 
       button {
         @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b-1 transition-colors font-modern-negra;
