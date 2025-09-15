@@ -32,18 +32,7 @@ Vite is a lightning-fast build tool and development server that powers this proj
 
 And many more, including enhanced security and optimized video performance!
 
-## 🤸 Quick Start
 
-Follow these steps to set up the project locally on your machine.
 
-## Installation
-Install the project dependencies using npm: 
-```bash
-npm install
----
-## Running the Project
-```bash
-npm run dev
 
-Open http://localhost:5173 in your browser to view the project.
 
