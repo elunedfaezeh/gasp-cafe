@@ -1,4 +1,4 @@
-![mojitobargsap Screenshot](./images/output.png)
+![mojitobargsap Screenshot](./public/images/output.png)
 
 __🤖Introduction__
 ----
