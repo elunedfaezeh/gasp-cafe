@@ -1,7 +1,8 @@
-![mojitobargsap Screenshot](./public/images/output.png)
 
-__🤖Introduction__
+__🥃Gsap cafe__
 ----
+![mojitobargsap Screenshot](./public/images/output.png)
+---
 A stunning cocktail website powered by GSAP, React, and Tailwind CSS—a modern, scroll-driven experience packed with advanced animations. Featuring dynamic SplitText reveals, smooth parallax scrolling, scroll-triggered effects, pinned sections, scroll-synced video playback, image masking, a custom animated carousel, seamless timeline animations, and a fully responsive design.
 
 ## 🚀 Demo
